@@ -82,7 +82,6 @@ public class Section {
 			button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					try {
-						//运行
 						result.setText("主程序-子程序演示运行结果：");
 						clearFile();
 						part1.Input.main(null);
@@ -131,11 +130,9 @@ public class Section {
 			button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					try {
-						//运行
-						result.setText("管道-过滤演示运行结果：");//表示清空
-						clearFile();//清空文件内容
+						result.setText("管道-过滤演示运行结果：");
+						clearFile();
 						part4.Main.main(null);
-	    				//读取文件，显示结果
 						String result_content = getFileContent();
 						result.append(result_content);
 					}
